@@ -1,10 +1,10 @@
 import {INCREMENT, DECREMENT, RESET} from '../actions/CounterActions';
 
-const initialState = {
+const counterState = {
     count: 0
   };
 
-export default function counterReducer(state = initialState, action) {
+export default function counterReducer(state = counterState, action) {
     console.log('reducer', state, action);
     switch(action.type) {
         case INCREMENT:
