@@ -1,0 +1,20 @@
+.counter {
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    min-height: 200px;
+    border: 2px dashed black;
+
+    > div {
+        display: flex;
+        min-width: 200px;
+        min-height: 100px;
+    }
+
+    .plus,
+    .minus {
+        min-width: 50px;
+        min-height: 50px;
+        background-color: #EAEFEF;
+    }
+}
