@@ -8,6 +8,7 @@ import rootReducer from '../reducers/RootReducer';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import WordPicker from './WordPicker/WordPicker';
+import MrShow from './MrShow/MrShow';
 
 const store = createStore(rootReducer);
 console.log(store.getState());
@@ -18,6 +19,7 @@ class App extends React.Component{
             <Provider store={store}>
                 <Counter />
                 <WordPicker />
+                <MrShow />
             </Provider>
         )
     }
