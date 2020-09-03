@@ -9,6 +9,7 @@ import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import WordPicker from './WordPicker/WordPicker';
 import MrShow from './MrShow/MrShow';
+import BlackJack from './BlackJack/BlackJack';
 
 const store = createStore(rootReducer);
 console.log(store.getState());
@@ -17,9 +18,10 @@ class App extends React.Component{
     render(){
         return(
             <Provider store={store}>
-                <Counter />
+                <BlackJack />
+                {/* <Counter />
                 <WordPicker />
-                <MrShow />
+                <MrShow /> */}
             </Provider>
         )
     }
